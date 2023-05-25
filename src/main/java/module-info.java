@@ -1,6 +1,7 @@
 module com.example.jeu6quiprend {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.graphics;
         requires javafx.web;
             
         requires org.controlsfx.controls;
@@ -10,7 +11,9 @@ module com.example.jeu6quiprend {
             requires org.kordamp.bootstrapfx.core;
             requires eu.hansolo.tilesfx;
             requires com.almasb.fxgl.all;
-    
+
+
+    requires java.desktop;
     opens com.example.jeu6quiprend to javafx.fxml;
     exports com.example.jeu6quiprend;
 }
